@@ -13,8 +13,10 @@
 // new changes being made to the above code.........
 
 const express = require("express");
+const cors = require("cors");
 const app = express();
 
+app.use(cors());
 app.use(express.json()); // allows JSON data
 
 let products = [];
